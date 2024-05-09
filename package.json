@@ -5,7 +5,7 @@
   "homepage": "https://www.cocos.com",
   "license": "MIT",
   "scripts": {
-    "test": "gulp test-in-ci",
+    "test": "OPENSSL_CONF=/dev/null gulp test-in-ci",
     "build-chunks": "node ./cocos2d/renderer/build/build-chunks",
     "build-mapping": "node ./cocos2d/renderer/build/build-mapping"
   },
@@ -28,6 +28,7 @@
     "chalk": "1.1.0",
     "del": "3.0.0",
     "event-stream": "3.3.2",
+    "express": "^4.19.2",
     "fire-fs": "0.2.1",
     "glsl-tokenizer": "2.1.5",
     "gulp": "^4.0.2",
@@ -40,6 +41,7 @@
     "gulp-mirror": "0.4.0",
     "gulp-optimize-js": "^1.1.0",
     "gulp-plumber": "0.6.6",
+    "gulp-qunit": "^3.0.1",
     "gulp-rename": "1.2.2",
     "gulp-shell": "0.4.1",
     "gulp-size": "2.1.0",
